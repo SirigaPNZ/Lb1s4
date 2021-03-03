@@ -37,12 +37,18 @@ System::Void Lb1s4::MyForm::button1_Click(System::Object^ sender, System::EventA
 		y = (sin(sin(x) + exp(cos(x)) + pow(x, 2))) * (pow((sin(pi * pow(x, 2))) + log(pow(x, 2)), 0.25));
 		textBox2->Text = System::Convert::ToString(y);
 
-		if ((x < 1) && (x != 0)) {
-			textBox2->Text = System::Convert::ToString("Ошибка ввода! Повторите!(x>1)");
-		}
-		else if (x == 0)
+		if (x == 0)
 		{
 			textBox2->Text = System::Convert::ToString("Функция не определена");
+		}
+		else if ((x >= -1.34) && (x <= -1)) {
+			textBox2->Text = System::Convert::ToString("Ошибка ввода! Не соответствует ОДЗ! ");
+		}
+		else if ((x >= -0.62) && (x <= 0.66) && (x != 0)) {
+			textBox2->Text = System::Convert::ToString("Ошибка ввода! Не соответствует ОДЗ! ");
+		}
+		else if ((x >= 1) && (x <= 1.35)) {
+			textBox2->Text = System::Convert::ToString("Ошибка ввода! Не соответствует ОДЗ! ");
 		}
 	}
 }

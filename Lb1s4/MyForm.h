@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <math.h>
 
 namespace Lb1s4 {
@@ -11,7 +11,7 @@ namespace Lb1s4 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -20,13 +20,13 @@ namespace Lb1s4 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -44,17 +44,18 @@ namespace Lb1s4 {
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Button^ button3;
+	private: System::Windows::Forms::Label^ label3;
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -67,13 +68,14 @@ namespace Lb1s4 {
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
+			this->label3 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(35, 9);
+			this->pictureBox1->Location = System::Drawing::Point(92, 33);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(315, 33);
 			this->pictureBox1->TabIndex = 0;
@@ -82,84 +84,98 @@ namespace Lb1s4 {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(12, 47);
+			this->label1->Location = System::Drawing::Point(40, 81);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(84, 32);
+			this->label1->Size = System::Drawing::Size(98, 40);
 			this->label1->TabIndex = 1;
-			this->label1->Text = L"   Введите \r\nпараметр х:";
+			this->label1->Text = L"   Р’РІРµРґРёС‚Рµ \r\nРїР°СЂР°РјРµС‚СЂ С…:";
 			// 
 			// textBox1
 			// 
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox1->Location = System::Drawing::Point(102, 57);
+			this->textBox1->Location = System::Drawing::Point(144, 96);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(96, 22);
+			this->textBox1->Size = System::Drawing::Size(206, 22);
 			this->textBox1->TabIndex = 2;
 			// 
 			// button1
 			// 
 			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button1->Location = System::Drawing::Point(269, 48);
+			this->button1->Location = System::Drawing::Point(356, 86);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(102, 40);
 			this->button1->TabIndex = 3;
-			this->button1->Text = L"Вычислить значение у";
+			this->button1->Text = L"Р’С‹С‡РёСЃР»РёС‚СЊ Р·РЅР°С‡РµРЅРёРµ Сѓ";
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(12, 97);
+			this->label2->Location = System::Drawing::Point(50, 174);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(137, 48);
+			this->label2->Size = System::Drawing::Size(157, 40);
 			this->label2->TabIndex = 4;
-			this->label2->Text = L"Значение функции \n\r\nу=";
+			this->label2->Text = L"Р—РЅР°С‡РµРЅРёРµ С„СѓРЅРєС†РёРё \r\nСѓ=";
 			// 
 			// textBox2
 			// 
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->textBox2->Location = System::Drawing::Point(35, 123);
+			this->textBox2->Location = System::Drawing::Point(77, 192);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(228, 22);
+			this->textBox2->Size = System::Drawing::Size(273, 22);
 			this->textBox2->TabIndex = 5;
 			// 
 			// button2
 			// 
 			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button2->Location = System::Drawing::Point(269, 85);
+			this->button2->Location = System::Drawing::Point(356, 183);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(102, 40);
 			this->button2->TabIndex = 6;
-			this->button2->Text = L"Очистить";
+			this->button2->Text = L"РћС‡РёСЃС‚РёС‚СЊ";
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// button3
 			// 
 			this->button3->BackColor = System::Drawing::Color::Red;
-			this->button3->Location = System::Drawing::Point(321, 131);
+			this->button3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button3->Location = System::Drawing::Point(426, 2);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(50, 23);
+			this->button3->Size = System::Drawing::Size(57, 27);
 			this->button3->TabIndex = 7;
-			this->button3->Text = L"Выход";
+			this->button3->Text = L"Р’С‹С…РѕРґ";
 			this->button3->UseVisualStyleBackColor = false;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
+			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label3->Location = System::Drawing::Point(74, 129);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(317, 18);
+			this->label3->TabIndex = 8;
+			this->label3->Text = L"РћР”Р—: С…в€‰[-1.34 ; -1], С…в€‰[-0.62 ; 0,66], С…в€‰[1 ; 1.35]";
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ControlLightLight;
-			this->ClientSize = System::Drawing::Size(383, 154);
+			this->ClientSize = System::Drawing::Size(484, 235);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->textBox2);
@@ -171,7 +187,7 @@ namespace Lb1s4 {
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->MaximizeBox = false;
 			this->Name = L"MyForm";
-			this->Text = L"Решение функции";
+			this->Text = L"Р РµС€РµРЅРёРµ С„СѓРЅРєС†РёРё";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
