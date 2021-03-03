@@ -42,7 +42,7 @@ System::Void Lb1s4::MyForm::button1_Click(System::Object^ sender, System::EventA
 		}
 		else if (x == 0)
 		{
-			textBox2->Text = System::Convert::ToString("Функция не пределена");
+			textBox2->Text = System::Convert::ToString("Функция не определена");
 		}
 	}
 }
