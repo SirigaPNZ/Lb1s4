@@ -51,3 +51,7 @@ System::Void Lb1s4::MyForm::button2_Click(System::Object^ sender, System::EventA
 	textBox1->Text = L"";
 	textBox2->Text = L"";
 }
+
+System::Void Lb1s4::MyForm::button3_Click(System::Object^ sender, System::EventArgs^ e){
+	this->Close();
+}
